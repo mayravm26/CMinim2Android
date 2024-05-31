@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".LoginActivity">
+
+
+    <Button
+        android:id="@+id/btn_login_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="161dp"
+        android:onClick="Onclickbtn"
+        android:text="Login"
+        app:backgroundTint="#B4E3A2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passtex_log" />
+
+    <TextView
+        android:id="@+id/crearregister_tv_text_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="157dp"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_log" />
+
+    <EditText
+        android:id="@+id/usertext_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="#B4E3A2"
+        android:textColorHighlight="#B4E3A2"
+        android:textColorHint="#B4E3A2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passtex_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:textColor="#B4E3A2"
+        android:textColorHighlight="#B4E3A2"
+        android:textColorHint="#B4E3A2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usertext_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
